@@ -10,13 +10,13 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    var myView: UIView = {
+    lazy var myView: UIView = {
         let view = UIView()
         view.backgroundColor = .blue
         return view
     }()
     
-    var flipButton:UIButton = {
+    lazy var flipButton:UIButton = {
         let button = UIButton()
         button.backgroundColor = .black
         button.setTitle("Flip", for: .normal)
@@ -24,7 +24,7 @@ class FirstViewController: UIViewController {
         return button
     }()
     
-    var keyButton:UIButton = {
+    lazy var keyButton:UIButton = {
         let button = UIButton()
         button.backgroundColor = .black
         button.setTitle("Key", for: .normal)
